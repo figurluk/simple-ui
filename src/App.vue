@@ -1,25 +1,26 @@
 <template>
   <div id="app">
-    <sui-button :rounded="true" color="red" size="large">
+    <SuiButton :rounded="true" color="red" size="large">
       My Button
-    </sui-button>
+    </SuiButton>
   </div>
 </template>
 
 <script>
-import SuiButton from "@/components/SuiButton";
+import SuiButton from '@/components/SuiButton'
 
 export default {
-  name: "App",
+  name: 'App',
+
   components: {
     SuiButton
   }
-};
+}
 </script>
 
 <style>
 #app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

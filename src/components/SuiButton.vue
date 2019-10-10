@@ -1,5 +1,5 @@
 <template>
-  <button @click="onClick" @dblclick="onDoubleClick">
+  <button class="" :class="btnClass" @click="onClick" @dblclick="onDoubleClick">
     <slot>
       Button
     </slot>
@@ -14,6 +14,20 @@ export default {
     rounded: {
       type: Boolean,
       default: false
+    },
+
+    btnStyle: {
+      type: String,
+      default: 'primary'
+    }
+  },
+
+  computed: {
+    btnClass() {
+      return (
+        this.$suiComponents.SuiButton[this.btnStyle] +
+        (this.rounded ? 'rounded' : '')
+      )
     }
   },
 
