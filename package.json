@@ -6,9 +6,11 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@vue/cli-plugin-unit-jest": "^3.11.0",
     "core-js": "^2.6.5",
     "vue": "^2.6.10"
   },
