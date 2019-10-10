@@ -1,18 +1,19 @@
 <template>
   <div
-    class="flex items-center justify-center"
+    class="flex items-center justify-center overflow-hidden"
     :class="avatarClasses"
-    :title="avatarTitle"
-    @click="onClick"
-    @dblclick="onDoubleClick"
   >
     <img
       :src="avatarUrl"
       :alt="avatarAlt"
       :class="avatarClasses"
-      v-if="avatarUrl !== null && avatarUrl.length > 0"
+      v-if="!avatarUrl"
     />
-    <span class="leading-none select-none" :class="'text-' + avatarTextSize" v-else>
+    <span
+      class="leading-none select-none"
+      :class="'text-' + avatarTextSize"
+      v-else
+    >
       <slot>?</slot>
     </span>
   </div>
@@ -23,22 +24,12 @@ export default {
   name: 'SuiAvatar',
 
   props: {
-    rounded: {
-      type: Boolean,
-      default: false
-    },
-
     avatarUrl: {
       type: String,
       default: ''
     },
 
     avatarAlt: {
-      type: String,
-      default: 'Avatar'
-    },
-
-    avatarTitle: {
       type: String,
       default: 'Avatar'
     },
@@ -63,20 +54,9 @@ export default {
     avatarClasses() {
       return (
         this.$suiComponents.SuiAvatar.style[this.avatarStyle] +
-        (this.rounded ? ' rounded-full' : '') +
         (' w-' + this.avatarSize) +
         (' h-' + this.avatarSize)
       )
-    }
-  },
-
-  methods: {
-    onClick(event) {
-      this.$emit('click', event)
-    },
-
-    onDoubleClick(event) {
-      this.$emit('dblclick', event)
     }
   }
 }
