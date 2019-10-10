@@ -26,20 +26,6 @@
     "tailwindcss": "^1.1.2",
     "vue-template-compiler": "^2.6.10"
   },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "plugin:prettier/recommended",
-      "eslint:recommended"
-    ],
-    "parserOptions": {
-      "parser": "babel-eslint"
-    }
-  },
   "browserslist": [
     "> 1%",
     "last 2 versions"
