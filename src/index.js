@@ -1,21 +1,13 @@
-import config from './config.stub'
+import SimpleUI from './framework'
 
-export default {
-  install(Vue, options) {
-    Vue.prototype.$suiComponents = {}
+export default SimpleUI
 
-    function setUsedComponent(component, config) {
-      Vue.prototype.$suiComponents[component] = config[component]
-      Vue.component(component, require('./components/' + component))
-    }
+const install = SimpleUI.install
 
-    let usedConfig = config
-    if (Object.prototype.hasOwnProperty.call(options, 'config')) {
-      usedConfig = Object.assign({}, config, options.config)
-    }
+SimpleUI.install = (Vue, options) => {
+  install.call(SimpleUI, Vue, options)
+}
 
-    usedConfig.components.forEach(component => {
-      setUsedComponent(component, config)
-    })
-  }
+if (typeof window !== 'undefined' && window.Vue) {
+  window.Vue.use(SimpleUI)
 }
