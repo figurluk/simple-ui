@@ -1,5 +1,5 @@
 export default {
-  components: ['SuiButton', 'SuiAvatar'],
+  components: ['SuiButton', 'SuiAvatar', 'SuiCard'],
   SuiButton: {
     style: {
       primary: 'bg-green-400 text-white',
@@ -9,6 +9,13 @@ export default {
   SuiAvatar: {
     style: {
       default: 'bg-green-400 text-white'
+    }
+  },
+  SuiCard: {
+    style: {
+      default: '',
+      primary: '',
+      secondary: ''
     }
   }
 }
