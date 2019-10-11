@@ -6,7 +6,12 @@
     @dblclick="onDoubleClick"
   >
     <slot>
-      Button
+      Default
+    </slot>
+    <slot name="loading">
+      <transition name="slide-fade">
+        <span v-if="loading" class="fas fa-spinner fa-spin ml-2"></span>
+      </transition>
     </slot>
   </button>
 </template>
@@ -18,13 +23,32 @@ export default {
   props: {
     kind: {
       type: String,
-      default: 'primary'
+      default: 'default'
+    },
+
+    size: {
+      type: String,
+      default: 'md'
+    },
+
+    disabled: {
+      type: Boolean,
+      default: false
+    },
+
+    loading: {
+      type: Boolean,
+      default: false
     }
   },
 
   computed: {
     btnClass() {
-      return this.$suiComponents.SuiButton.style[this.kind]
+      return [
+        this.$suiComponents.SuiButton.style[this.kind],
+        this.$suiComponents.SuiButton.style[this.size],
+        this.disabled ? this.$suiComponents.SuiButton.style['disabled'] : ''
+      ].join(' ')
     }
   },
 
@@ -42,6 +66,7 @@ export default {
 
 <style lang="postcss" scoped>
 .sui-button {
-  @apply .px-4 .py-2 .text-sm;
+  transition: background-color 200ms ease;
+  will-change: background-color;
 }
 </style>
