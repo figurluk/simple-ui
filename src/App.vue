@@ -1,8 +1,6 @@
 <template>
   <div id="app">
-    <SuiButton :rounded="true">
-      My Button
-    </SuiButton>
+    <SuiButton />
   </div>
 </template>
 

@@ -1,5 +1,10 @@
 <template>
-  <button class="" :class="btnClass" @click="onClick" @dblclick="onDoubleClick">
+  <button
+    class="sui-button"
+    :class="btnClass"
+    @click="onClick"
+    @dblclick="onDoubleClick"
+  >
     <slot>
       Button
     </slot>
@@ -11,12 +16,7 @@ export default {
   name: 'SuiButton',
 
   props: {
-    rounded: {
-      type: Boolean,
-      default: false
-    },
-
-    btnStyle: {
+    kind: {
       type: String,
       default: 'primary'
     }
@@ -24,10 +24,7 @@ export default {
 
   computed: {
     btnClass() {
-      return (
-        this.$suiComponents.SuiButton[this.btnStyle] +
-        (this.rounded ? 'rounded' : '')
-      )
+      return this.$suiComponents.SuiButton.style[this.kind]
     }
   },
 
@@ -43,4 +40,8 @@ export default {
 }
 </script>
 
-<style lang="postcss" scoped></style>
+<style lang="postcss" scoped>
+.sui-button {
+  @apply .px-4 .py-2 .text-sm;
+}
+</style>
