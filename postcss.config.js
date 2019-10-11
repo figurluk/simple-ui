@@ -1,3 +1,8 @@
 module.exports = {
-  plugins: [require("tailwindcss")("tailwind.js"), require("autoprefixer")()]
-};
+  plugins: [
+    require('postcss-nested-ancestors'),
+    require('postcss-nested'),
+    require('tailwindcss')('tailwind.config.js'),
+    require('autoprefixer')()
+  ]
+}

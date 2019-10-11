@@ -1,7 +1,17 @@
 <template>
-  <button class="" :class="btnClass" @click="onClick" @dblclick="onDoubleClick">
+  <button
+    class="sui-button"
+    :class="btnClass"
+    @click="onClick"
+    @dblclick="onDoubleClick"
+  >
     <slot>
-      Button
+      Default
+    </slot>
+    <slot name="loading">
+      <transition name="slide-fade">
+        <span v-if="loading" class="fas fa-spinner fa-spin ml-2"></span>
+      </transition>
     </slot>
   </button>
 </template>
@@ -11,23 +21,34 @@ export default {
   name: 'SuiButton',
 
   props: {
-    rounded: {
+    kind: {
+      type: String,
+      default: 'default'
+    },
+
+    size: {
+      type: String,
+      default: 'md'
+    },
+
+    disabled: {
       type: Boolean,
       default: false
     },
 
-    btnStyle: {
-      type: String,
-      default: 'primary'
+    loading: {
+      type: Boolean,
+      default: false
     }
   },
 
   computed: {
     btnClass() {
-      return (
-        this.$suiComponents.SuiButton[this.btnStyle] +
-        (this.rounded ? 'rounded' : '')
-      )
+      return [
+        this.$suiComponents.SuiButton.style[this.kind],
+        this.$suiComponents.SuiButton.style[this.size],
+        this.disabled ? this.$suiComponents.SuiButton.style['disabled'] : ''
+      ].join(' ')
     }
   },
 
@@ -43,4 +64,9 @@ export default {
 }
 </script>
 
-<style lang="postcss" scoped></style>
+<style lang="postcss" scoped>
+.sui-button {
+  transition: background-color 200ms ease;
+  will-change: background-color;
+}
+</style>
