@@ -1,14 +1,16 @@
 <template>
   <div id="app" class="p-12">
     <Buttons />
+    <Cards />
   </div>
 </template>
 
 <script>
 import Buttons from '@/components/preview/Buttons'
+import Cards from '@/components/preview/Cards'
 export default {
   name: 'App',
-  components: { Buttons }
+  components: { Cards, Buttons }
 }
 </script>
 

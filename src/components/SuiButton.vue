@@ -66,6 +66,7 @@ export default {
 
 <style lang="postcss" scoped>
 .sui-button {
+  @apply outline-none;
   transition: background-color 200ms ease;
   will-change: background-color;
 }
