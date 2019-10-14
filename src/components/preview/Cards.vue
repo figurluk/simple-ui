@@ -1,6 +1,6 @@
 <template>
   <div class="w-full">
-    <h1>Cards</h1>
+    <h1>SuiCards</h1>
     <SuiCard />
     <div class="diveder"></div>
     <div class="diveder"></div>

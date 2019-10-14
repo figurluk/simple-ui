@@ -2,15 +2,17 @@
   <div id="app" class="p-12">
     <Buttons />
     <Cards />
+    <Notifications />
   </div>
 </template>
 
 <script>
 import Buttons from '@/components/preview/Buttons'
 import Cards from '@/components/preview/Cards'
+import Notifications from '@/components/preview/Notifications'
 export default {
   name: 'App',
-  components: { Cards, Buttons }
+  components: { Notifications, Cards, Buttons }
 }
 </script>
 

@@ -1,5 +1,10 @@
 export default {
-  components: ['SuiButton', 'SuiAvatar', 'SuiCard'],
+  components: ['SuiAvatar', 'SuiButton', 'SuiCard', 'SuiNotification'],
+  SuiAvatar: {
+    style: {
+      default: 'bg-green-400 text-white'
+    }
+  },
   SuiButton: {
     style: {
       lg: 'px-6 py-4 text-lg tracking-wide',
@@ -12,11 +17,6 @@ export default {
         'bg-green-400 text-white hover:bg-green-500 active:bg-green-600 active:shadow-inner',
       secondary:
         'bg-indigo-400 text-white hover:bg-indigo-500 active:bg-indigo-600 active:shadow-inner'
-    }
-  },
-  SuiAvatar: {
-    style: {
-      default: 'bg-green-400 text-white'
     }
   },
   SuiCard: {
@@ -36,6 +36,17 @@ export default {
         body: '',
         footer: 'text-sm bg-gray-100'
       }
+    }
+  },
+  SuiNotification: {
+    style: {
+      default: 'p-4 border-l-4 border-gray-200 shadow-lg hover:shadow-xl',
+      primary: 'p-4 border-l-4 border-green-200 shadow-lg hover:shadow-xl',
+      secondary: 'p-4 border-l-4 border-indigo-200 shadow-lg hover:shadow-xl',
+      success: 'p-4 border-l-4 border-green-500 shadow-lg hover:shadow-xl',
+      warning: 'p-4 border-l-4 border-orange-500 shadow-lg hover:shadow-xl',
+      error: 'p-4 border-l-4 border-red-600 shadow-lg hover:shadow-xl',
+      closer: 'absolute right-3 top-3 w-4 h-4'
     }
   }
 }
