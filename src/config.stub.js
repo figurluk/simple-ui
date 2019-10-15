@@ -1,5 +1,11 @@
 export default {
-  components: ['SuiAvatar', 'SuiButton', 'SuiCard', 'SuiNotification'],
+  components: [
+    'SuiAvatar',
+    'SuiButton',
+    'SuiCard',
+    'SuiLoader',
+    'SuiNotification'
+  ],
   SuiAvatar: {
     style: {
       default: 'bg-green-400 text-white'
@@ -36,6 +42,12 @@ export default {
         body: '',
         footer: 'text-sm bg-gray-100'
       }
+    }
+  },
+  SuiLoader: {
+    style: {
+      fullscreen: 'fixed inset-0 bg-sui-loader',
+      element: 'absolute w-full h-full bg-sui-loader'
     }
   },
   SuiNotification: {

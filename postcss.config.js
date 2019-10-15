@@ -9,7 +9,6 @@ module.exports = {
       content: [
         './src/**/*.html',
         './src/**/*.vue',
-        './src/**/*.vue',
         './src/config.stub.js',
         'tailwind.config.js'
       ],

@@ -3,6 +3,7 @@
     <Buttons />
     <Cards />
     <Notifications />
+    <Loaders />
   </div>
 </template>
 
@@ -10,9 +11,10 @@
 import Buttons from '@/components/preview/Buttons'
 import Cards from '@/components/preview/Cards'
 import Notifications from '@/components/preview/Notifications'
+import Loaders from '@/components/preview/Loaders'
 export default {
   name: 'App',
-  components: { Notifications, Cards, Buttons }
+  components: { Loaders, Notifications, Cards, Buttons }
 }
 </script>
 
