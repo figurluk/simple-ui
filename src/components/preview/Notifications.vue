@@ -56,6 +56,7 @@
       >Error</sui-notification
     >
     <div class="diveder"></div>
+    <hr />
   </div>
 </template>
 
