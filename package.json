@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "private": false,
   "main": "./dist/index.js",
+  "author": {
+    "name": "Lukas Figura"
+  },
+  "license": "ISC",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",

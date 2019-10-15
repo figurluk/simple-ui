@@ -42,17 +42,16 @@ export default {
 <style lang="postcss" scoped>
 .sui-card {
   @apply bg-white shadow-xl max-w-md;
+}
+.sui-card__header {
+  @apply px-6 pt-6 pb-2;
+}
 
-  .sui-card__header {
-    @apply px-6 pt-6 pb-2;
-  }
+.sui-card__body {
+  @apply px-6 py-4;
+}
 
-  .sui-card__body {
-    @apply px-6 py-4;
-  }
-
-  .sui-card__footer {
-    @apply px-6 pt-2 pb-3;
-  }
+.sui-card__footer {
+  @apply px-6 pt-2 pb-3;
 }
 </style>
