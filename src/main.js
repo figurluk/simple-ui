@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
-import '@/assets/css/tailwind.css'
+import '@/assets/css/simple-ui.css'
 import SimpleUI from '@/framework'
 
 Vue.config.productionTip = false
