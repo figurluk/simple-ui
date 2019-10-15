@@ -1,6 +1,7 @@
 export default {
   components: [
     'SuiAvatar',
+    'SuiBadge',
     'SuiButton',
     'SuiCard',
     'SuiNotification',
@@ -9,6 +10,13 @@ export default {
   SuiAvatar: {
     style: {
       default: 'bg-green-400 text-white'
+    }
+  },
+  SuiBadge: {
+    style: {
+      default: '',
+      primary: '',
+      secondary: ''
     }
   },
   SuiButton: {
