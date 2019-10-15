@@ -15,9 +15,12 @@ export default {
   },
   SuiBadge: {
     style: {
-      default: '',
-      primary: '',
-      secondary: ''
+      default:
+        'w-6 h-6 bg-gray-200 rounded-full text-xs font-medium text-gray-900',
+      primary:
+        'w-6 h-6 bg-green-400 text-white rounded-full text-xs font-medium',
+      secondary:
+        'w-6 h-6 bg-indigo-400 text-white rounded-full text-xs font-medium'
     }
   },
   SuiButton: {
@@ -38,51 +41,57 @@ export default {
     style: {
       default: {
         header: 'border-b-2 border-gray-200',
-        body: '',
+        body: 'text-gray-900',
         footer: 'text-sm bg-gray-100'
       },
       primary: {
         header: 'border-b-2 border-green-200',
-        body: '',
+        body: 'text-gray-900',
         footer: 'text-sm bg-gray-100'
       },
       secondary: {
         header: 'border-b-2 border-indigo-200',
-        body: '',
+        body: 'text-gray-900',
         footer: 'text-sm bg-gray-100'
       }
     }
   },
   SuiLoader: {
     style: {
-      fullscreen: 'fixed inset-0 bg-sui-loader',
-      element: 'absolute w-full h-full bg-sui-loader'
+      fullscreen: 'fixed inset-0 bg-sui-loader text-gray-900',
+      element: 'absolute w-full h-full bg-sui-loader text-gray-900'
     }
   },
   SuiNotification: {
     style: {
-      default: 'p-4 border-l-4 border-gray-200 shadow-lg hover:shadow-xl',
-      primary: 'p-4 border-l-4 border-green-200 shadow-lg hover:shadow-xl',
-      secondary: 'p-4 border-l-4 border-indigo-200 shadow-lg hover:shadow-xl',
-      success: 'p-4 border-l-4 border-green-500 shadow-lg hover:shadow-xl',
-      warning: 'p-4 border-l-4 border-orange-500 shadow-lg hover:shadow-xl',
-      error: 'p-4 border-l-4 border-red-600 shadow-lg hover:shadow-xl',
-      closer: 'absolute right-3 top-3 w-4 h-4'
+      default:
+        'p-4 border-l-4 border-gray-200 shadow-lg text-gray-900 hover:shadow-xl',
+      primary:
+        'p-4 border-l-4 border-green-200 shadow-lg text-gray-900 hover:shadow-xl',
+      secondary:
+        'p-4 border-l-4 border-indigo-200 shadow-lg text-gray-900 hover:shadow-xl',
+      success:
+        'p-4 border-l-4 border-green-500 shadow-lg text-gray-900 hover:shadow-xl',
+      warning:
+        'p-4 border-l-4 border-orange-500 shadow-lg text-gray-900 hover:shadow-xl',
+      error:
+        'p-4 border-l-4 border-red-600 shadow-lg text-gray-900 hover:shadow-xl',
+      closer: 'absolute right-3 top-3 w-4 h-4 text-gray-900'
     }
   },
   SuiTooltip: {
     style: {
       default: {
         content: 'py-2 px-3 border-l-4 border-gray-200 shadow-lg',
-        activator: 'text-black'
+        activator: 'text-gray-900'
       },
       primary: {
         content: 'py-2 px-3 border-l-4 border-green-200 shadow-lg',
-        activator: 'text-black'
+        activator: 'text-gray-900'
       },
       secondary: {
         content: 'py-2 px-3 border-l-4 border-indigo-200 shadow-lg',
-        activator: 'text-black'
+        activator: 'text-gray-900'
       }
     }
   }

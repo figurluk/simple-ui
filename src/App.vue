@@ -5,6 +5,7 @@
     <Notifications />
     <Loaders />
     <Tooltips />
+    <Badges />
   </div>
 </template>
 
@@ -14,9 +15,10 @@ import Cards from '@/components/preview/Cards'
 import Notifications from '@/components/preview/Notifications'
 import Loaders from '@/components/preview/Loaders'
 import Tooltips from '@/components/preview/Tooltips'
+import Badges from '@/components/preview/Badges'
 export default {
   name: 'App',
-  components: { Loaders, Notifications, Cards, Buttons, Tooltips }
+  components: { Badges, Loaders, Notifications, Cards, Buttons, Tooltips }
 }
 </script>
 
