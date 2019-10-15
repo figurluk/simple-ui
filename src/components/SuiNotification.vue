@@ -95,10 +95,10 @@ export default {
         this.$el
           .querySelector('.sui-notification__closer')
           .addEventListener('click', this.closeNotification)
+      }
 
-        if (this.autoclose !== null) {
-          setTimeout(this.closeNotification, this.autoclose)
-        }
+      if (this.autoclose !== null) {
+        setTimeout(this.closeNotification, this.autoclose)
       }
     })
   },
@@ -122,7 +122,7 @@ export default {
 <style lang="postcss" scoped>
 .sui-notification {
   @apply relative max-w-sm;
-  transition: box-shadow 200ms ease;
+  transition: all 200ms ease;
   will-change: box-shadow;
 }
 
