@@ -62,11 +62,11 @@ export default {
 
   computed: {
     notificationClass() {
-      return [this.$suiComponents.SuiNotification.style[this.kind]].join(' ')
+      return this.$suiComponents.SuiNotification.style[this.kind]
     },
 
     closerClass() {
-      return [this.$suiComponents.SuiNotification.style.closer].join(' ')
+      return this.$suiComponents.SuiNotification.style.closer
     }
   },
 

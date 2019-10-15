@@ -4,7 +4,7 @@
       <div
         v-if="!hidden"
         class="sui-tooltip__content"
-        :class="tooltipContentClass"
+        :class="tooltipContentClasses"
       >
         <slot>
           Default top
@@ -51,7 +51,7 @@ export default {
   }),
 
   computed: {
-    tooltipContentClass() {
+    tooltipContentClasses() {
       return [
         this.$suiComponents.SuiTooltip.style[this.kind].content,
         'sui-tooltip--' + this.usedPosition
@@ -117,8 +117,6 @@ export default {
           this.usedPosition = 'right'
         }
       }
-      // eslint-disable-next-line no-console
-      console.log(offset, window.innerHeight, window.innerWidth)
     },
     toggleTooltip() {
       this.controlTooltipPosition()
