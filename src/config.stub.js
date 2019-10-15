@@ -3,6 +3,7 @@ export default {
     'SuiAvatar',
     'SuiButton',
     'SuiCard',
+    'SuiLoader',
     'SuiNotification',
     'SuiTooltip'
   ],
@@ -42,6 +43,12 @@ export default {
         body: '',
         footer: 'text-sm bg-gray-100'
       }
+    }
+  },
+  SuiLoader: {
+    style: {
+      fullscreen: 'fixed inset-0 bg-sui-loader',
+      element: 'absolute w-full h-full bg-sui-loader'
     }
   },
   SuiNotification: {
