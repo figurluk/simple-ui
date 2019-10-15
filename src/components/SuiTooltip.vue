@@ -117,8 +117,6 @@ export default {
           this.usedPosition = 'right'
         }
       }
-      // eslint-disable-next-line no-console
-      console.log(offset, window.innerHeight, window.innerWidth)
     },
     toggleTooltip() {
       this.controlTooltipPosition()
