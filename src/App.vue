@@ -3,6 +3,8 @@
     <Buttons />
     <Cards />
     <Notifications />
+
+    <Tooltips />
   </div>
 </template>
 
@@ -10,9 +12,10 @@
 import Buttons from '@/components/preview/Buttons'
 import Cards from '@/components/preview/Cards'
 import Notifications from '@/components/preview/Notifications'
+import Tooltips from '@/components/preview/Tooltips'
 export default {
   name: 'App',
-  components: { Notifications, Cards, Buttons }
+  components: { Tooltips, Notifications, Cards, Buttons }
 }
 </script>
 

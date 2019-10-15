@@ -121,7 +121,7 @@ export default {
 
 <style lang="postcss" scoped>
 .sui-notification {
-  @apply relative max-w-sm;
+  @apply relative max-w-sm bg-white;
   transition: all 200ms ease;
   will-change: box-shadow;
 }

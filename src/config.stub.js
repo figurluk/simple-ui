@@ -1,5 +1,11 @@
 export default {
-  components: ['SuiAvatar', 'SuiButton', 'SuiCard', 'SuiNotification'],
+  components: [
+    'SuiAvatar',
+    'SuiButton',
+    'SuiCard',
+    'SuiNotification',
+    'SuiTooltip'
+  ],
   SuiAvatar: {
     style: {
       default: 'bg-green-400 text-white'
@@ -47,6 +53,22 @@ export default {
       warning: 'p-4 border-l-4 border-orange-500 shadow-lg hover:shadow-xl',
       error: 'p-4 border-l-4 border-red-600 shadow-lg hover:shadow-xl',
       closer: 'absolute right-3 top-3 w-4 h-4'
+    }
+  },
+  SuiTooltip: {
+    style: {
+      default: {
+        content: 'py-2 px-3 border-l-4 border-gray-200 shadow-lg',
+        activator: 'text-black'
+      },
+      primary: {
+        content: 'py-2 px-3 border-l-4 border-green-200 shadow-lg',
+        activator: 'text-black'
+      },
+      secondary: {
+        content: 'py-2 px-3 border-l-4 border-indigo-200 shadow-lg',
+        activator: 'text-black'
+      }
     }
   }
 }
