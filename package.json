@@ -1,15 +1,33 @@
 {
   "name": "simple-ui",
+  "description": "Simple frontend framework for Vue.js",
   "version": "0.0.1",
   "private": false,
   "main": "./dist/index.js",
   "author": {
-    "name": "Lukas Figura"
+    "name": "Lukas Figura <figurluk@gmail.com>"
   },
+  "keywords": [
+    "simple-ui",
+    "ui",
+    "framework",
+    "ui-kit",
+    "vue",
+    "vuejs",
+    "vue2js",
+    "vue2",
+    "components",
+    "component"
+  ],
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/figurluk/simple-ui.git"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build:lib": "bili --bundle-node-modules",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint"
   },
@@ -25,12 +43,14 @@
     "@vue/cli-plugin-unit-jest": "^3.12.0",
     "@vue/cli-service": "^3.12.0",
     "babel-eslint": "^10.0.1",
+    "bili": "^4.8.1",
     "cssnano": "^4.1.10",
     "eslint": "^5.16.0",
     "eslint-config-prettier": "^6.4.0",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-vue": "^5.0.0",
     "postcss-nested-ancestors": "^2.0.0",
+    "rollup-plugin-vue": "^5.0.1",
     "tailwindcss": "^1.1.2",
     "vue-template-compiler": "^2.6.10"
   },
