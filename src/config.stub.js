@@ -7,6 +7,7 @@ export default {
     'SuiLoader',
     'SuiModal',
     'SuiNotification',
+    'SuiTextarea',
     'SuiTooltip'
   ],
   SuiAvatar: {
@@ -89,6 +90,9 @@ export default {
         'p-4 border-l-4 border-red-600 shadow-lg text-gray-900 hover:shadow-xl',
       closer: 'absolute right-3 top-3 w-4 h-4 text-gray-900'
     }
+  },
+  SuiTextarea: {
+    style: {}
   },
   SuiTooltip: {
     style: {

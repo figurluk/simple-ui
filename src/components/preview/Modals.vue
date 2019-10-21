@@ -36,6 +36,8 @@
 
       <sui-modal :kind="'fullscreen'" ref="fullModal"></sui-modal>
     </div>
+    <div class="diveder"></div>
+    <hr />
   </div>
 </template>
 

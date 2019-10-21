@@ -7,6 +7,7 @@
     <Tooltips />
     <Badges />
     <Modals />
+    <TextAreas />
   </div>
 </template>
 
@@ -18,9 +19,11 @@ import Loaders from '@/components/preview/Loaders'
 import Tooltips from '@/components/preview/Tooltips'
 import Badges from '@/components/preview/Badges'
 import Modals from '@/components/preview/Modals'
+import TextAreas from '@/components/preview/TextAreas'
 export default {
   name: 'App',
   components: {
+    TextAreas,
     Modals,
     Badges,
     Loaders,
