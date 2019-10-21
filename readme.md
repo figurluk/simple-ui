@@ -1,4 +1,4 @@
-# simple-ui
+# Simple UI
 
 ## Project setup
 ```
@@ -25,5 +25,6 @@ npm run test
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## License
+
+[ISC](https://github.com/figurluk/simple-ui/blob/master/license.md)
