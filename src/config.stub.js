@@ -5,6 +5,7 @@ export default {
     'SuiButton',
     'SuiCard',
     'SuiLoader',
+    'SuiModal',
     'SuiNotification',
     'SuiTooltip'
   ],
@@ -60,6 +61,16 @@ export default {
     style: {
       fullscreen: 'fixed inset-0 bg-sui-loader text-gray-900',
       element: 'absolute w-full h-full bg-sui-loader text-gray-900'
+    }
+  },
+  SuiModal: {
+    style: {
+      fullscreen: 'min-w-screen min-h-screen',
+      large: 'max-w-2xl items-center',
+      default: 'max-w-lg items-center',
+      small: 'max-w-sm items-center',
+      header: 'text-lg border border-gray-200',
+      footer: 'bg-gray-100 text-sm'
     }
   },
   SuiNotification: {
