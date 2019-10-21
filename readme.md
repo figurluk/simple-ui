@@ -1,29 +1,7 @@
-# simple-ui
+# Simple UI
 
-## Project setup
-```
-npm install
-```
+## Beta release soon. Stay tuned
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## License
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+[ISC](https://github.com/figurluk/simple-ui/blob/master/license.md)
