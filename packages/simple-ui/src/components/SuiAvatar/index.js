@@ -1,4 +1,4 @@
-import SuiAvatar from './SuiAvatar'
+import SuiAvatar from './SuiAvatar.vue'
 
 export { SuiAvatar }
 export default SuiAvatar

@@ -1,5 +1,5 @@
 import config from './config.stub'
-import * as components from './src/components'
+import * as components from './components'
 
 export function install(Vue, options) {
   Vue.prototype.$suiComponents = {}
