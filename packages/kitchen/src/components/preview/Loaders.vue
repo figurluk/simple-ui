@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import SuiLoader from '@/components/SuiLoader'
+import SuiLoader from '../../../../simple-ui/src/components/SuiLoader/SuiLoader'
 export default {
   name: 'Loaders',
   components: { SuiLoader }

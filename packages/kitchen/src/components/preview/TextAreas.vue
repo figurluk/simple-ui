@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import SuiTextarea from '@/components/SuiTextarea'
+import SuiTextarea from '../../../../simple-ui/src/components/SuiTextarea/SuiTextarea'
 export default {
   name: 'TextAreas',
   components: { SuiTextarea },

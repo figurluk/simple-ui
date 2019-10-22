@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
-import '@/assets/css/simple-ui.css'
-import SimpleUI from '@/framework'
+import '../simple-ui/src/assets/css/simple-ui.css'
+import SimpleUI from '../packages/simple-ui/framework'
 
 Vue.config.productionTip = false
 Vue.use(SimpleUI)

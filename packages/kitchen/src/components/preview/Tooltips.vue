@@ -55,7 +55,7 @@
 </template>
 
 <script>
-import SuiTooltip from '@/components/SuiTooltip'
+import SuiTooltip from '../../../../simple-ui/src/components/SuiTooltip/SuiTooltip'
 export default {
   name: 'Tooltips',
   components: { SuiTooltip }

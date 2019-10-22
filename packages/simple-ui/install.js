@@ -1,11 +1,12 @@
 import config from './config.stub'
+import * as components from './src/components'
 
 export function install(Vue, options) {
   Vue.prototype.$suiComponents = {}
 
   function setUsedComponent(component, config) {
     Vue.prototype.$suiComponents[component] = config[component]
-    Vue.component(component, require('./components/' + component))
+    Vue.component(component, components[component])
   }
 
   let usedConfig = config

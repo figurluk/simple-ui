@@ -42,7 +42,7 @@
 </template>
 
 <script>
-import SuiButton from '@/components/SuiButton'
+import SuiButton from '../../../../simple-ui/src/components/SuiButton/SuiButton'
 export default {
   name: 'Buttons',
 
