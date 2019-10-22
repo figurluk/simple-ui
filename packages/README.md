@@ -4,4 +4,4 @@
 
 1. **docs** - SimpleUI documentation 
 2. **kitchen** - used for testing
-3. **simple-ui** - main source code for SimpleUI
+3. **lib** - main source code for SimpleUI

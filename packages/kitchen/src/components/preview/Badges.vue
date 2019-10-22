@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import SuiBadge from '../../../../simple-ui/src/components/SuiBadge/SuiBadge'
+import SuiBadge from '../../../../lib/src/components/SuiBadge/SuiBadge'
 export default {
   name: 'Badges',
 

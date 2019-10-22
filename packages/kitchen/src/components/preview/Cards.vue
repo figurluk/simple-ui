@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import SuiCard from '../../../../simple-ui/src/components/SuiCard/SuiCard'
+import SuiCard from '../../../../lib/src/components/SuiCard/SuiCard'
 export default {
   name: 'Cards',
   components: { SuiCard }

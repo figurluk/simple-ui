@@ -42,8 +42,8 @@
 </template>
 
 <script>
-import SuiButton from '../../../../simple-ui/src/components/SuiButton/SuiButton'
-import SuiModal from '../../../../simple-ui/src/components/SuiModal/SuiModal'
+import SuiButton from '../../../../lib/src/components/SuiButton/SuiButton'
+import SuiModal from '../../../../lib/src/components/SuiModal/SuiModal'
 export default {
   name: 'Modals',
   components: { SuiModal, SuiButton }

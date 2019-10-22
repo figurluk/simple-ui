@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
-import '../simple-ui/src/assets/css/simple-ui.css'
+import '../lib/src/assets/css/simple-ui.css'
 import SimpleUI from '../packages/simple-ui/framework'
 
 Vue.config.productionTip = false

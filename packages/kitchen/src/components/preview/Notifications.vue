@@ -61,7 +61,7 @@
 </template>
 
 <script>
-import SuiNotification from '../../../../simple-ui/src/components/SuiNotification/SuiNotification'
+import SuiNotification from '../../../../lib/src/components/SuiNotification/SuiNotification'
 export default {
   name: 'Notifications',
   components: { SuiNotification }
