@@ -14,11 +14,8 @@
 </template>
 
 <script>
-import SuiBadge from '../../../../lib/src/components/SuiBadge/SuiBadge'
 export default {
   name: 'Badges',
-
-  components: { SuiBadge },
 
   data: () => ({
     firstBadgeValue: 7

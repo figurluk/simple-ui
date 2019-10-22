@@ -42,13 +42,8 @@
 </template>
 
 <script>
-import SuiButton from '../../../../lib/src/components/SuiButton/SuiButton'
 export default {
-  name: 'Buttons',
-
-  components: {
-    SuiButton
-  }
+  name: 'Buttons'
 }
 </script>
 

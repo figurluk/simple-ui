@@ -15,10 +15,8 @@
 </template>
 
 <script>
-import SuiCard from '../../../../lib/src/components/SuiCard/SuiCard'
 export default {
-  name: 'Cards',
-  components: { SuiCard }
+  name: 'Cards'
 }
 </script>
 

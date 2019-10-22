@@ -55,10 +55,8 @@
 </template>
 
 <script>
-import SuiTooltip from '../../../../lib/src/components/SuiTooltip/SuiTooltip'
 export default {
-  name: 'Tooltips',
-  components: { SuiTooltip }
+  name: 'Tooltips'
 }
 </script>
 

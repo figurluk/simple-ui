@@ -54,8 +54,8 @@ export default {
     soundSources: {
       type: Object,
       default: () => ({
-        mp3: require('@/../../assets/sounds/beyond-doubt.mp3'),
-        off: require('@/../../assets/sounds/beyond-doubt.ogg')
+        mp3: require('./assets/sounds/beyond-doubt.mp3'),
+        off: require('./assets/sounds/beyond-doubt.ogg')
       })
     }
   },
@@ -128,6 +128,6 @@ export default {
 
 .sui-notification__closer {
   @apply cursor-pointer bg-cover bg-no-repeat bg-center;
-  background-image: url('../../assets/images/x.svg');
+  background-image: url('../assets/images/x.svg');
 }
 </style>

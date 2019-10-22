@@ -9,10 +9,8 @@
 </template>
 
 <script>
-import SuiTextarea from '../../../../lib/src/components/SuiTextarea/SuiTextarea'
 export default {
   name: 'TextAreas',
-  components: { SuiTextarea },
   data: () => ({
     areaModel: null
   })

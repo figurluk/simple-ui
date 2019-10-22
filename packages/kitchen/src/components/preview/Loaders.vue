@@ -3,17 +3,15 @@
     <h1>SuiLoaders</h1>
 
     <div class="relative h-64 w-full bg-green-600">
-      <sui-loader :kind="'element'" />
+      <SuiLoader :kind="'element'" />
     </div>
     <div class="diveder"></div>
   </div>
 </template>
 
 <script>
-import SuiLoader from '../../../../lib/src/components/SuiLoader/SuiLoader'
 export default {
-  name: 'Loaders',
-  components: { SuiLoader }
+  name: 'Loaders'
 }
 </script>
 

@@ -3,12 +3,13 @@
   "version": "0.0.1",
   "private": false,
   "scripts": {
-    "serve": "../../node_modules/.bin/vue-cli-service serve",
-    "test:unit": "../../node_modules/.bin/vue-cli-service test:unit",
-    "lint": "../../node_modules/.bin/vue-cli-service lint"
+    "serve": "./node_modules/.bin/vue-cli-service serve",
+    "test:unit": "./node_modules/.bin/vue-cli-service test:unit",
+    "lint": "./node_modules/.bin/vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^2.6.10",
+    "ui-simple": "file:../lib",
     "vue": "^2.6.10"
   },
   "devDependencies": {

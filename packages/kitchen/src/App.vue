@@ -12,14 +12,14 @@
 </template>
 
 <script>
-import Buttons from './src/components/preview/Buttons'
-import Cards from './src/components/preview/Cards'
-import Notifications from './src/components/preview/Notifications'
-import Loaders from './src/components/preview/Loaders'
-import Tooltips from './src/components/preview/Tooltips'
-import Badges from './src/components/preview/Badges'
-import Modals from './src/components/preview/Modals'
-import TextAreas from './src/components/preview/TextAreas'
+import Buttons from './components/preview/Buttons'
+import Cards from './components/preview/Cards'
+import Notifications from './components/preview/Notifications'
+import Loaders from './components/preview/Loaders'
+import Tooltips from './components/preview/Tooltips'
+import Badges from './components/preview/Badges'
+import Modals from './components/preview/Modals'
+import TextAreas from './components/preview/TextAreas'
 export default {
   name: 'App',
   components: {

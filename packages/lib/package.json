@@ -1,7 +1,7 @@
 {
   "name": "ui-simple",
   "description": "Simple frontend framework for Vue.js",
-  "version": "0.0.1-b",
+  "version": "0.0.1-g",
   "private": false,
   "main": "dist/index.umd.js",
   "module": "dist/index.esm.js",
@@ -49,6 +49,7 @@
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-vue": "^5.0.0",
     "postcss-nested-ancestors": "^2.0.0",
+    "rollup-plugin-copy-assets": "^2.0.1",
     "rollup-plugin-vue": "^5.0.1",
     "tailwindcss": "^1.1.2",
     "vue-template-compiler": "^2.6.10"
@@ -61,7 +62,7 @@
     "last 2 versions"
   ],
   "files": [
-    "src/*",
+    "src/components/*",
     "dist/*",
     "src/config.stub.js"
   ]
