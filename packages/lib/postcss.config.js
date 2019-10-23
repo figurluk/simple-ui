@@ -36,8 +36,9 @@ module.exports = {
     require('postcss-nested-ancestors'),
     require('postcss-nested'),
     require('tailwindcss')('tailwind.config.js'),
+    require('postcss-import'),
     require('autoprefixer')(),
-    ...(process.env.NODE_ENV === 'production' ? [purgecss] : []),
+    purgecss,
     require('cssnano')({
       preset: 'default'
     })

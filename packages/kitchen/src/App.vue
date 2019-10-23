@@ -37,6 +37,8 @@ export default {
 
 <style lang="postcss">
 body {
+  @apply .p-16;
+
   hr {
     @apply my-2;
   }

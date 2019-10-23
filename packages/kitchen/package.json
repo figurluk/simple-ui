@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "core-js": "^2.6.10",
-    "ui-simple": "file:../lib",
+    "ui-simple": "0.0.2-a",
     "vue": "^2.6.10"
   },
   "devDependencies": {

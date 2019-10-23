@@ -58,10 +58,22 @@ module.exports = {
         ]
       }
     },
-    'copy-assets': {
-      assets: ['src/assets']
+    copy: {
+      assets: [
+        'src/assets/images',
+        'src/assets/sounds',
+        'src/assets/webfonts',
+        'src/assets/css/simple-ui.css'
+      ],
+      targets: [
+        { src: 'src/assets/images', dest: 'dist/assets' },
+        { src: 'src/assets/sounds', dest: 'dist/assets' },
+        { src: 'src/assets/webfonts', dest: 'dist/assets' },
+        {
+          src: 'src/assets/css/simple-ui.css',
+          dest: 'dist/assets/css'
+        }
+      ]
     }
   }
 }
-
-// todo:: https://www.npmjs.com/package/rollup-plugin-tailwind
