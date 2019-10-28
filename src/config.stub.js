@@ -92,7 +92,11 @@ export default {
     }
   },
   SuiTextarea: {
-    style: {}
+    style: {
+      textarea: 'border border-gray-200',
+      helper: 'text-gray-400 text-sm',
+      error: 'text-red-500 text-sm'
+    }
   },
   SuiTooltip: {
     style: {
