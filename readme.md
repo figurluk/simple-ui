@@ -1,6 +1,6 @@
 # Simple UI
 
-## Beta release soon. Stay tuned
+!!! All core ideas of Simple UI are included in this library https://vue-tailwind.com/ so consider using this library. I really recommend it.
 
 ## License
 
